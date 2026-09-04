@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAF e Patronato a Foggia | CONF.A.S.I. Sede Territoriale</title>
+  <meta name="description" content="CONF.A.S.I. Sede Territoriale di Foggia: 730, ISEE, F24, SPID, servizi telematici, servizi energetici, noleggio auto e assicurazioni auto. Contattaci a Foggia.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#b51f24">
+  <style>
+    :root{
+      --red:#b51f24; --red-dark:#8f151a; --ink:#202124; --muted:#666;
+      --bg:#f7f7f7; --white:#fff; --line:#e6e6e6;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    a{color:inherit}
+    .topbar{background:#111;color:#fff;text-align:center;padding:9px 16px;font-size:14px}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+    .nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{height:74px;width:auto;object-fit:contain}
+    .navlinks{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}
+    .navlinks a{text-decoration:none}
+    .btn{display:inline-block;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:700;border:2px solid transparent;cursor:pointer}
+    .btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-dark)}
+    .btn-outline{border-color:var(--red);color:var(--red);background:#fff}
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff 55%,#f5e7e7 100%);padding:64px 20px 56px}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+    .eyebrow{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.06;margin:12px 0 20px}
+    .hero p{font-size:19px;color:#444;max-width:680px}
+    .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+    .hero-card h2{margin-top:0;font-size:23px}
+    .contact-row{padding:12px 0;border-bottom:1px solid var(--line)}
+    .contact-row:last-child{border-bottom:0}
+    .contact-row strong{display:block;font-size:13px;color:var(--muted);text-transform:uppercase}
+    section{padding:64px 20px}
+    .wrap{max-width:1120px;margin:auto}
+    .section-title{text-align:center;margin-bottom:38px}
+    .section-title h2{font-size:34px;margin:0 0 8px}
+    .section-title p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service h3{margin:8px 0 8px;font-size:20px}
+    .service p{color:#555;margin:0}
+    .icon{font-size:30px}
+    .highlight{background:#fff}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{padding:24px;border-radius:14px;background:#f9eeee;border:1px solid #f0d4d4}
+    .num{width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+    .form-area{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}
+    form{display:grid;gap:13px}
+    label{font-weight:700;font-size:14px}
+    input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff}
+    textarea{min-height:130px;resize:vertical}
+    .small{font-size:12px;color:#666}
+    footer{background:#151515;color:#fff;padding:36px 20px}
+    footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+    footer p{margin:5px 0;color:#ddd}
+    .mobile-cta{display:none}
+    @media(max-width:850px){
+      .navlinks{display:none}
+      .hero-inner,.form-area{grid-template-columns:1fr}
+      .grid,.steps{grid-template-columns:1fr 1fr}
+      .hero{padding-top:42px}
+    }
+    @media(max-width:560px){
+      .logo{height:58px}
+      .grid,.steps{grid-template-columns:1fr}
+      section{padding:48px 16px}
+      .hero{padding:42px 16px}
+      .card{padding:20px}
+      .ctas .btn{width:100%;text-align:center}
+      .mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #ddd;padding:8px;z-index:50;gap:8px}
+      .mobile-cta a{flex:1;text-align:center;padding:11px 8px;border-radius:7px;text-decoration:none;font-weight:800;font-size:13px}
+      .mobile-cta .call{background:var(--red);color:#fff}
+      .mobile-cta .wa{background:#1f9d55;color:#fff}
+      body{padding-bottom:65px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">CONF.A.S.I. – Sede Territoriale di Foggia · Assistenza per cittadini, famiglie e automobilisti</div>
+
+  <header>
+    <div class="nav">
+      <a href="#top" aria-label="CONF.A.S.I. Foggia">
+        <img class="logo" src="logo-confasi.webp" alt="CONF.A.S.I. Confederazione Autonoma Sindacati Italiani">
+      </a>
+      <nav class="navlinks">
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti">Contatti</a>
+        <a class="btn btn-red" href="tel:+3908817211">Chiama 0881 7211</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">CAF & Patronato · Foggia</div>
+          <h1>Servizi fiscali, telematici e per la tua auto.</h1>
+          <p><strong>CONF.A.S.I. Sede Territoriale di Foggia</strong> ti offre un unico punto di riferimento per pratiche fiscali, servizi online, energia, noleggio auto e assicurazioni auto.</p>
+          <div class="ctas">
+            <a class="btn btn-red" href="#contatti">Richiedi informazioni</a>
+            <a class="btn btn-outline" href="tel:+3908817211">Chiama la sede</a>
+          </div>
+        </div>
+
+        <div class="card hero-card">
+          <h2>📍 Siamo a Foggia</h2>
+          <div class="contact-row"><strong>Indirizzo</strong>Viale Fortore 9B/16, Foggia (FG)</div>
+          <div class="contact-row"><strong>Telefono</strong><a href="tel:+3908817211">0881 7211</a></div>
+          <div class="contact-row"><strong>Email</strong><a href="mailto:confasi.foggia@libero.it">confasi.foggia@libero.it</a></div>
+          <div class="contact-row"><strong>Orari</strong>Lun–Ven 9:00–12:30<br>Lun, Mer, Ven 16:30–18:30</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servizi" class="highlight">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>I nostri servizi</h2>
+          <p>Assistenza e supporto per le principali esigenze di cittadini e famiglie.</p>
+        </div>
+        <div class="grid">
+          <article class="card service"><div class="icon">📄</div><h3>730 e servizi fiscali</h3><p>Assistenza per Modello 730, F24 e pratiche fiscali.</p></article>
+          <article class="card service"><div class="icon">📊</div><h3>ISEE</h3><p>Supporto per la gestione della pratica ISEE e della documentazione necessaria.</p></article>
+          <article class="card service"><div class="icon">💻</div><h3>SPID e servizi telematici</h3><p>Assistenza per SPID e procedure e servizi online.</p></article>
+          <article class="card service"><div class="icon">⚡</div><h3>Servizi energetici</h3><p>Supporto per le esigenze legate ai servizi e alle utenze energetiche.</p></article>
+          <article class="card service"><div class="icon">🚗</div><h3>Noleggio auto</h3><p>Noleggio auto occasionale e soluzioni di noleggio a lungo termine.</p><a class="btn btn-outline" style="margin-top:14px" href="https://wa.me/393287891753?text=Buongiorno%2C%20vorrei%20informazioni%20sul%20noleggio%20auto." target="_blank" rel="noopener">WhatsApp Noleggio</a></article>
+          <article class="card service"><div class="icon">🛡️</div><h3>Assicurazioni auto</h3><p>Richiedi informazioni e verifica le soluzioni disponibili per la tua auto.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Come possiamo aiutarti</h2>
+          <p>Un contatto semplice per capire subito quale servizio ti serve.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="num">1</div><h3>Contattaci</h3><p>Chiamaci o inviaci una richiesta indicando il servizio di tuo interesse.</p></div>
+          <div class="step"><div class="num">2</div><h3>Parliamo della pratica</h3><p>Ti indichiamo le informazioni e la documentazione necessarie.</p></div>
+          <div class="step"><div class="num">3</div><h3>Ti assistiamo</h3><p>Seguiamo la tua richiesta con un'assistenza chiara e personalizzata.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti" class="highlight">
+      <div class="wrap form-area">
+        <div>
+          <div class="eyebrow">Contatti</div>
+          <h2>Richiedi informazioni</h2>
+          <p>Compila il modulo e indicaci il servizio che ti interessa. Ti ricontatteremo ai recapiti indicati.</p>
+          <p><strong>Telefono:</strong> <a href="tel:+3908817211">0881 7211</a></p>
+          <p><strong>WhatsApp noleggio auto:</strong> <a href="https://wa.me/393287891753" target="_blank" rel="noopener">328 789 1753</a></p>
+          <p><strong>Email:</strong> <a href="mailto:confasi.foggia@libero.it">confasi.foggia@libero.it</a></p>
+          <p><strong>Sede:</strong> Viale Fortore 9B/16, Foggia (FG)</p>
+        </div>
+
+        <div class="card">
+          <!-- Collega questo form al tuo servizio email/CRM prima della pubblicazione.
+               In alternativa puoi sostituire action con il tuo endpoint. -->
+          <form action="#" method="post" onsubmit="return false;">
+            <div><label for="nome">Nome e Cognome</label><input id="nome" name="nome" required></div>
+            <div><label for="telefono">Telefono</label><input id="telefono" name="telefono" type="tel" required></div>
+            <div><label for="servizio">Servizio di interesse</label>
+              <select id="servizio" name="servizio" required>
+                <option value="">Seleziona un servizio</option>
+                <option>730</option><option>ISEE</option><option>F24</option>
+                <option>SPID</option><option>Servizi telematici</option>
+                <option>Servizi energetici</option><option>Noleggio auto occasionale</option>
+                <option>Noleggio auto lungo termine</option><option>Assicurazione auto</option><option>Altro</option>
+              </select>
+            </div>
+            <div><label for="messaggio">Messaggio</label><textarea id="messaggio" name="messaggio" placeholder="Scrivi qui la tua richiesta..."></textarea></div>
+            <label style="font-weight:400"><input type="checkbox" required style="width:auto;margin-right:7px">Dichiaro di aver letto l'informativa privacy e acconsento al trattamento dei dati per essere ricontattato.</label>
+            <button class="btn btn-red" type="submit" onclick="alert('Il modulo è una base grafica. Per ricevere le richieste, collega il form a un servizio email/CRM o al tuo hosting.')">Invia richiesta</button>
+            <div class="small">Prima della pubblicazione, inserire il link alla vostra informativa privacy e collegare il modulo a un sistema di raccolta contatti.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>CONF.A.S.I. – Sede Territoriale di Foggia</strong><p>Viale Fortore 9B/16 · Foggia (FG)</p></div>
+      <div><p><a href="tel:+3908817211">0881 7211</a> · <a href="mailto:confasi.foggia@libero.it">confasi.foggia@libero.it</a></p><p>Lun–Ven 9:00–12:30 · Lun/Mer/Ven 16:30–18:30</p></div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="call" href="tel:+3908817211">☎ Chiama</a>
+    <a class="wa" href="https://wa.me/393287891753?text=Buongiorno%2C%20vorrei%20informazioni%20sul%20noleggio%20auto." target="_blank" rel="noopener">WhatsApp Auto</a>
+  </div>
+</body>
+</html>
